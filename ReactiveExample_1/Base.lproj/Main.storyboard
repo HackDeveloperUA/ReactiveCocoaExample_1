@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,97 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YyI-mF-Ewh">
+                                <rect key="frame" x="123" y="28" width="128" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="aa7-m5-oF7"/>
+                                    <constraint firstAttribute="width" constant="128" id="geG-5B-dVH"/>
+                                </constraints>
+                                <state key="normal" title="Change userName"/>
+                                <connections>
+                                    <action selector="changeUserNameAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3wr-Vj-nvw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ac5-9K-DyA">
+                                <rect key="frame" x="123" y="86" width="128" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="9iG-jZ-Ehf"/>
+                                    <constraint firstAttribute="height" constant="30" id="HRH-i3-2t0"/>
+                                </constraints>
+                                <state key="normal" title="Change age"/>
+                                <connections>
+                                    <action selector="changeAgeAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B5O-4V-kBx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UcA-cf-NeL">
+                                <rect key="frame" x="120.5" y="142" width="134" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="134" id="cd3-QF-CPX"/>
+                                    <constraint firstAttribute="height" constant="30" id="yqV-Jn-EKe"/>
+                                </constraints>
+                                <state key="normal" title="Change password"/>
+                                <connections>
+                                    <action selector="changePasswordAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bhz-Y4-cf9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VR4-Th-jbu">
+                                <rect key="frame" x="123" y="197" width="128" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="EvN-A8-8WW"/>
+                                    <constraint firstAttribute="height" constant="30" id="wPk-1q-4WG"/>
+                                </constraints>
+                                <state key="normal" title="Change surname"/>
+                                <connections>
+                                    <action selector="changeSurename:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1fT-Ll-0kG"/>
+                                </connections>
+                            </button>
+                            <switch opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="pO6-Oa-s3F">
+                                <rect key="frame" x="295" y="142" width="51" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="Qq8-Om-x59"/>
+                                    <constraint firstAttribute="width" constant="49" id="VSC-Q6-oOd"/>
+                                </constraints>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1oa-jo-Uio">
+                                <rect key="frame" x="97" y="250" width="181" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.78238436277648882" blue="0.83604247086243733" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="181" id="CIe-3x-3Jx"/>
+                                    <constraint firstAttribute="height" constant="30" id="X5u-t5-MWb"/>
+                                </constraints>
+                                <state key="normal" title="Task5"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pO6-Oa-s3F" firstAttribute="centerY" secondItem="UcA-cf-NeL" secondAttribute="centerY" id="6HE-Xt-S9z"/>
+                            <constraint firstItem="1oa-jo-Uio" firstAttribute="top" secondItem="VR4-Th-jbu" secondAttribute="bottom" constant="23" id="7G1-AI-k1N"/>
+                            <constraint firstItem="UcA-cf-NeL" firstAttribute="top" secondItem="Ac5-9K-DyA" secondAttribute="bottom" constant="26" id="9Mc-Tn-caB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pO6-Oa-s3F" secondAttribute="trailing" constant="15" id="E54-wH-NR6"/>
+                            <constraint firstItem="YyI-mF-Ewh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Eel-i5-93c"/>
+                            <constraint firstItem="VR4-Th-jbu" firstAttribute="top" secondItem="UcA-cf-NeL" secondAttribute="bottom" constant="25" id="Fh6-wA-byg"/>
+                            <constraint firstItem="1oa-jo-Uio" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="G4y-bg-9Ey"/>
+                            <constraint firstItem="pO6-Oa-s3F" firstAttribute="leading" secondItem="UcA-cf-NeL" secondAttribute="trailing" constant="40.5" id="SYt-j0-LyK"/>
+                            <constraint firstItem="YyI-mF-Ewh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Te4-Bz-m4Z"/>
+                            <constraint firstItem="UcA-cf-NeL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VIb-Lz-sah"/>
+                            <constraint firstItem="Ac5-9K-DyA" firstAttribute="top" secondItem="YyI-mF-Ewh" secondAttribute="bottom" constant="28" id="XAW-gY-Csx"/>
+                            <constraint firstItem="VR4-Th-jbu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="arJ-yV-Zea"/>
+                            <constraint firstItem="Ac5-9K-DyA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wov-Rg-JdP"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="changeAgeButton" destination="Ac5-9K-DyA" id="bTt-sA-Haf"/>
+                        <outlet property="changeNameButtton" destination="YyI-mF-Ewh" id="0pS-8T-pvU"/>
+                        <outlet property="changePasswordButton" destination="UcA-cf-NeL" id="9u2-3e-rPN"/>
+                        <outlet property="changeSurenameButton" destination="VR4-Th-jbu" id="Pme-SU-OSF"/>
+                        <outlet property="switchIsConfirmation" destination="pO6-Oa-s3F" id="V7w-gh-YVX"/>
+                        <outlet property="task5Button" destination="1oa-jo-Uio" id="Vj7-tV-Rj9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="120.98950524737631"/>
         </scene>
     </scenes>
 </document>
